@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --blue: #1C3879;
+    --light-blue: #607EAA;
+    --skin: #AA8B56;
+    --light-skin: #F9F5EB;
+    font-family: 'Rubik';
+}
+
+.container{
+    padding: 2vh 10vw 0vh 10vw;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brandName{
+    display: flex;
+    flex-direction: row;
+    font-family: "Rubik";
+}
+
+.brandName p{
+    font-weight: 700;
+    color:var(--blue);
+    font-size:2.7rem;
+    margin:0;
+}
+
+#p2{   
+    margin: 0px 0px 0px 0.2rem;
+    border-radius: 0.3rem;
+    padding: 0px 0.5rem 0rem 0.5rem;
+    background-color: var(--blue);
+    color: white;
+}
+
+
+.navbar-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#icon-btn{
+    padding-right: 4ch;
+    font-family: "Rubik";
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border:none;
+    align-items: center;
+    color:var(--light-blue)
+}
+
+#icon-btn:hover{
+    color:var(--blue)
+}
+#icon-btn p{
+    margin: 0;
+    margin-top: 0.2ch;
+
+}
+
+#icon{
+    font-size: 1.5rem;
+}
+
+#connect-btns{
+    border-left:1px solid var(--light-blue);
+}
+#connect-btns button{
+    background-color: white;
+    color:var(--blue);
+    font-family: "Rubik";
+    font-size:1rem;
+    padding:1ch 2ch; 
+    border-radius: 20px;
+}
+#join-btn{
+    margin:0;
+    margin-left: 1ch;
+    border:none;
+}
+
+#join-btn:hover{
+    background-color: #f9f5eb92;
+}
+
+#sign-nav-btn{
+    border:2px solid var(--light-blue);
+}
+
+#sign-nav-btn:hover{
+    background-color:#7c9dcf36;
+}
+
+.sign-in-container{
+    padding: 0vh 0vw 0vh 0vw;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.image-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1;
+
+}
+
+.image-container img{
+    width: 145%;
+}
+
+.left-block{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-block p{
+    font-size:3.4rem;
+    font-family: 'Rubik';
+    color:var(--skin);
+    font-weight: 300;
+    margin-bottom: 4vh;
+    z-index:20;
+}
+
+.sign-in-form-container{
+    display: flex;
+    flex-direction:column;
+    width: 70%;
+    margin-bottom: 4vh;
+}
+
+.sign-in-form-container input{
+    padding:2ch 1ch;
+    margin: 0;
+    margin-bottom: 2vh;
+}
+
+
+.sign-in-form-container a{
+    text-decoration: none;
+    color:var(--light-blue);
+    text-decoration: underline;
+    font-weight: 500;
+    margin-bottom: 4vh;
+}
+
+.sign-in-form-container a:hover{
+    color:var(--blue);
+    text-decoration: none;
+}
+
+#sign-in-btn{
+    padding:1.5ch 1ch;
+    background-color: var(--blue);
+    color:white;
+    border: none;
+    border-radius: 6rem;
+    font-size: 1.2rem;
+    margin-bottom: 3vh;
+    opacity: 0.9;
+}
+
+#sign-in-btn:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: ease 0.3s;
+
+}
+
+.or-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vh;
+    opacity: 50%;
+}
+
+#sign-in-google-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5ch 1ch;
+    margin-top: 1vh;
+    background-color: white;
+    border:1px solid rgb(111, 111, 111);
+    border-radius: 6rem;
+    font-size: 1.2rem;
+    color:rgb(100, 100, 100);
+    margin-bottom: 2vh;
+}
+
+#sign-in-google-btn img{
+    width: 7%;
+    margin-right:1vw
+}
+
+#sign-in-google-btn:hover{
+    cursor: pointer;
+    border:1px solid var(--blue);
+    transition: 0.3s ease;
+    color:var(--blue);
+    background-color:#7c9dcf36;
+}
+
+#new-to-btn{
+    padding: 1.5ch 1ch;
+    background-color: white;
+    border:1px solid rgb(0, 0, 0);
+    border-radius: 6rem;
+    font-size: 1.2rem;
+    color:black;
+}
+
+#new-to-btn:hover{
+    cursor: pointer;
+    border:1px solid var(--blue);
+    transition: 0.3s ease;
+    color:var(--blue);
+    background-color:#7c9dcf36;
+}
+
+.or-option::before, .or-option::after{
+    background-color: rgba(0,0,00.35);
+    content: '';
+    height: 1px;
+    width: 50%;
+}
+
+.or-option span{
+    padding:1vh 1vw;
+}
+
+.explore-topics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10vh 10vw 0vh 10vw;
+    background-color: var(--light-skin);
+}
