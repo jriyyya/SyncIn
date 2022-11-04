@@ -30,7 +30,6 @@ const showSlides = (n) => {
   }
   slides.forEach((e) => {
     e.style.display = "none";
-    console.log(e);
   });
   slides[slideIndex - 1].style.display = "flex";
 
@@ -54,3 +53,20 @@ setInterval(() => {
 
 let slideIndex = 1;
 showSlides(slideIndex);
+
+window.addEventListener("click", () => {
+  if (document.getElementById("dropdown-content").style.display == "flex") {
+    window.addEventListener("click", (event) => {
+      if (
+        event.target != document.getElementById("dropdown-content") &&
+        event.target != document.getElementById("drop-btn")
+      ) {
+        document.getElementById("dropdown-content").style.display = "none";
+      }
+    });
+  }
+});
+
+const showContent = () => {
+  document.getElementById("dropdown-content").style.display = "flex";
+};

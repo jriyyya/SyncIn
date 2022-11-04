@@ -255,7 +255,7 @@ body{
 .explore-topics{
     display: flex;
     justify-content: space-around;
-    padding: 8vh 10vw 8vh 10vw;
+    padding: 14vh 10vw 14vh 10vw;
     background-color: var(--light-skin);
 }
 
@@ -323,7 +323,7 @@ body{
 .right-jobs{
     display: flex;
     justify-content: space-around;
-    padding: 8vh 10vw 8vh 10vw;
+    padding: 12vh 10vw 12vh 10vw;
     background-color: white;
 }
 
@@ -360,7 +360,7 @@ body{
 }
 
 .slideshow-container{
-    padding: 2vh 10vw 0vh 10vw;
+    padding: 2vh 10vw 2vh 10vw;
     background-color: #f9f5eb39;
 }
 
@@ -436,4 +436,105 @@ body{
 @keyframes fade{
     from{opacity: 0;}
     to{opacity: 1;}
+}
+
+#dropdown-box-container{
+    padding:12vh 10vw 12vh 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#right-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0vh 4vw;
+    width: 50%;
+}
+
+#left-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0vh 4vw;
+    width: 50%;
+}
+
+#left-div p, #right-div p{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color:rgb(75, 75, 75);
+    margin: 0;
+    margin-bottom: 1ch;
+}
+
+#left-div img, #right-div img{
+    object-fit: cover;
+    height: 40vh;
+    width:50vh;
+}
+
+#left-div button{
+    background-color: white;
+    border-radius: 40px;
+    padding: 1.5ch;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+#left-div button:hover{
+    background-color: rgb(248, 248, 248);
+    cursor: pointer;
+    opacity: 1;
+}
+
+#right-div button{
+    width:70%;
+    background-color: white;
+    padding:1.5ch;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid rgb(193, 193, 193);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#right-div button:hover{
+    background-color: rgb(248, 248, 248);
+    cursor: pointer;
+}
+
+#dropdown-content{
+    height: 30vh;
+    display: none;
+    width: 70%;
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.315), 0 15px 40px rgba(166,173,201,.2);
+    overflow: scroll;
+}
+
+#dropdown-content ul{
+    list-style: none;
+    padding: 0px;
+    margin-left: 2ch;
+}
+
+#dropdown-content li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:1ch;
+    font-size: 1rem;
+}
+
+#dropdown-content li span{
+    font-size:0.7rem;
+    color:grey;
+}
+
+#dropdown-content li:hover{
+text-decoration: underline;
+cursor: pointer;
 }
