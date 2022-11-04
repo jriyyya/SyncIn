@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="container">
+<div class="container">
     <div class="navBar">
         <div class="brandName"><p id="p1">Sync</p> <p id="p2">in</p> </div>
         <div class="navbar-item">
@@ -44,15 +44,89 @@
     </div>
 </div>
 
-
-    <div class="explore-topics">
-        <p>Explore Topics you are interested in</p>
+<div class="explore-topics">
+        <div class="p-div">Explore Topics you are interested in</div>
         <div class="content-topics">
-            <button id="content-topics-btn">See all topics</button>
-            <button id="content-topics-btn">Job Search</button>
-            <button id="content-topics-btn">Careers</button>
+            <p>CONTENT TOPICS</p>
+            <button id="see-all">See All Topics</button>
+            <button class="content-topics-btn">Work Place</button>
+            <button class="content-topics-btn">Job Search</button>
+            <button class="content-topics-btn">Careers</button>
+            <button class="content-topics-btn">Interviewing</button>
+            <button class="content-topics-btn">Salary and Compensation</button>
+            <button class="content-topics-btn">Internships</button>
+            <button class="content-topics-btn">Employee Benefits</button>
+        </div>
+</div>
+
+<div class="right-jobs">
+        <div class="p-div">Find The Right Job or Internships for you</div>
+        <div class="content-topics">
+            <p>Suggested Searches</p>
+            <button class="content-topics-btn">Engineering</button>
+            <button class="content-topics-btn">Finance</button>
+            <button class="content-topics-btn">Business Development</button>
+            <button class="content-topics-btn">Customer Service</button>
+            <button class="content-topics-btn">Marketing</button>
+            <button class="content-topics-btn">Human Resources</button>
+            <button class="content-topics-btn">Retail Associate</button>
+            <button class="content-topics-btn hidden-btn">Operations</button>
+            <button class="content-topics-btn hidden-btn">information technology</button>
+            <button class="content-topics-btn hidden-btn">Sales</button>
+            <button class="content-topics-btn hidden-btn">Education</button>
+            <button class="content-topics-btn hidden-btn">Support</button>
+            <button class="content-topics-btn hidden-btn">Consulting</button>
+            <button class="content-topics-btn hidden-btn">Real Estate</button>
+            <button class="content-topics-btn hidden-btn">Community and social service</button>
+            <button class="content-topics-btn hidden-btn">Art and Design</button>
+            <button class="content-topics-btn hidden-btn">Media and communication</button>
+            <button class="content-topics-btn hidden-btn">Accounting</button>
+            <button class="content-topics-btn hidden-btn">Quality Assurance</button>
+            <button class="content-topics-btn hidden-btn">Research</button>
+        <button id="show-more" onclick="showMore()">Show More ></button>
+        <button id="show-less" onclick="showLess()">Show Less <</button>
+            </div>
+
+</div>
+
+<div class="slideshow-container">
+    <div id="slideshow-btn">
+    <button id="prev-btn" onclick="minusSlides()">&#8672; Previous</button>
+    <button id="next-btn" onclick="plusSlides()">Next &#8674;</button>
+    </div>
+
+    <div class="different-slides fade">
+        <div class="left-slide-box">
+            <p id="heading-slide">Tell the employment you are available for work.</p>
+            <p id="para-slide">You can confidentially inform recruiters or openly communicate with the <span>SyncIn</span> community that you are seeking for new employment prospects by using the Open To Work tool.</p>
+        </div>
+        <div class="right-slide-box">
+           <img src="woman-working.jpg" alt="woman-working">
         </div>
     </div>
+
+    <div class="different-slides fade">
+        <div class="left-slide-box">
+            <p id="heading-slide">Discussions now can present an opportunity tomorrow.</p>
+            <p id="para-slide">As you advance in your job, sending messages to people you know is a terrific method to solidify your connections.</p>
+        </div>
+        <div class="right-slide-box">
+           <img src="group-discussion.jpg" alt="woman-working">
+        </div>
+    </div>
+
+    <div class="different-slides fade">
+        <div class="left-slide-box">
+            <p id="heading-slide">Keep current with developments in your field</p>
+            <p id="para-slide">There are several methods to remain up to date on the most recent topics in your industry on LinkedIn, including live videos, stories, newsletters, and more.</p>
+        </div>
+        <div class="right-slide-box">
+           <img src="up-to-date.jpg" alt="woman-working">
+        </div>
+    </div>
+
+
+</div>
 
 <script src="script.js"></script>
 </body>
