@@ -65,7 +65,8 @@ body{
 }
 
 #icon-btn:hover{
-    color:var(--blue)
+    color:var(--blue);
+    cursor:pointer;
 }
 #icon-btn p{
     margin: 0;
@@ -96,6 +97,7 @@ body{
 
 #join-btn:hover{
     background-color: #f9f5eb92;
+    cursor: pointer;
 }
 
 #sign-nav-btn{
@@ -104,6 +106,7 @@ body{
 
 #sign-nav-btn:hover{
     background-color:#7c9dcf36;
+    cursor: pointer;
 }
 
 .sign-in-container{

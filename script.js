@@ -49,7 +49,7 @@ setInterval(() => {
   if (slideIndex < slides.length) {
     showSlides(slideIndex++);
   }
-}, 9000);
+}, 19000);
 
 let slideIndex = 1;
 showSlides(slideIndex);
